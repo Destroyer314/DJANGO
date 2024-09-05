@@ -1,5 +1,8 @@
 {% extends 'main.html' %}
 {% block content %}
 <h1>{{room.name}}</h1>
+<!--add hr and p tag for description--> 
+<hr>
+<p>{{room.description}}</p>
 <a href="{% url 'home' %}">Home</a>
 {% endblock %}
